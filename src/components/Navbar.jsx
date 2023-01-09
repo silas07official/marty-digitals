@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <div className="shadow-md w-full fixed top-0 left-0 bg-white">
-      <div className="md:flex items-center justify-between py-4 md:px-10 px-7 ">
+      <div className="md:flex items-center justify-between py-4 md:px-14 px-5 ">
         <div>
           <a href="/">
             <img src={logo} alt="" width={60} height={20} />
@@ -26,7 +26,11 @@ function Navbar() {
           } md:opacity-100 `}
         >
           {Links.map((link) => (
-            <li key={link.name} className="capitalize md:ml-6 my-7 md:my-0">
+            <li
+              key={link.name}
+              className="capitalize md:ml-6 my-7 md:my-0"
+              onClick={() => setOpen(!open)}
+            >
               <a
                 href={link.link}
                 className=" text-slate-500 hover:text-indigo-500 duration-500"
@@ -35,11 +39,13 @@ function Navbar() {
               </a>
             </li>
           ))}
-          <a href="#home">
-            <Button className="bg-indigo-500 hover:bg-indigo-400 text-white md:ml-6">
-              Get Started
-            </Button>
-          </a>
+
+          <Button
+            className="bg-indigo-500 hover:bg-indigo-400 text-white md:ml-6 hidden md:block"
+            onClick={() => setOpen(!open)}
+          >
+            Get Started
+          </Button>
         </ul>
       </div>
     </div>

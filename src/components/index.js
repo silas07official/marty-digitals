@@ -21,9 +21,38 @@ export const bannerContent = {
   headerText: "Business Solutions for Growth",
   paragraph:
     "In todays digital age, having an online presence is essential for businesses to stay Competitive, Grow and Succeed. Lets build you a solution that grows your business and increases your revenue",
-  image:imageOne,
-  buttonText:'Start A Project'
+  image: imageOne,
+  buttonText: "Start A Project",
 };
+
+export const serviceLeft = {
+  title: "Our services?",
+  subText:
+    "We specialize in designing and building high-quality websites that help our clients achieve their online goals.",
+  buttonText: "Read More",
+};
+export const serviceCard = [
+  {
+    title: "Website Development",
+    icon: "desktop-outline",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+  },
+  {
+    title: "Software Development",
+    icon: "desktop-outline",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+  },
+  {
+    title: "Website Maintenance",
+    icon: "construct-outline",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+  },
+  {
+    title: "Email Services",
+    icon: "desktop-outline",
+    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+  },
+];
 
 export const Links = [
   { name: "home", link: "/" },

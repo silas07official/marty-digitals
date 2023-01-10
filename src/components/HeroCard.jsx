@@ -9,10 +9,10 @@ function HeroCard() {
         <h1 className=" text-bigText font-bold text-2xl md:text-4xl">
           {bannerContent.headerText}
         </h1>
-        <p className="my-3 text-[18px] w-[90%]">{bannerContent.paragraph}</p>
+        <p className="my-3 text-[18px] w-[90%] text-bigText">{bannerContent.paragraph}</p>
         <div className=" my-6 md:mt-[20px]">
           <Button
-            className={`bg-indigo-500 borde hover:bg-indigo-300 text-white`}
+            className={`bg-indigo-500 borde hover:bg-indigo-400 text-white`}
           >
             {bannerContent.buttonText}
           </Button>

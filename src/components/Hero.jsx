@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className=" bg-sectionBg my-[56px] md:my-[72px] md:px-14 px-2 py-9 md:py-10"
+      className=" bg-sectionBg mt-[48px] mb-16 md:mt-[65px] md:mb-16 md:px-4 px-2 py-9 md:py-10"
     >
       <HeroCard />
     </section>

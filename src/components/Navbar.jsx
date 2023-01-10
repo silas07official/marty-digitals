@@ -7,7 +7,7 @@ function Navbar() {
   let [open, setOpen] = useState(false);
 
   return (
-    <div className="shadow-md w-full fixed top-0 left-0 bg-white">
+    <div className=" shadow-sm w-full fixed top-0 left-0 bg-sectionBg">
       <div className="md:flex items-center justify-between py-4 md:px-14 px-5 ">
         <div>
           <a href="/">
@@ -16,12 +16,12 @@ function Navbar() {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-3 cursor-pointer md:hidden"
+          className="text-3xl absolute right-8 top-3 cursor-pointer text-bigText md:hidden"
         >
           <ion-icon name={open ? "close" : "menu"}></ion-icon>
         </div>
         <ul
-          className={`md:flex items-center bg-sectionBg md:bg-transparent md:pb-0 pb-8 absolute md:static md:z-auto z-[-1] left-0 w-full md:w-auto pl-9 md:pl-0 transition-all duration-500 ease-in ${
+          className={`md:flex items-center bg-sectionBg md:bg-transparent md:pb-0 pb-8 absolute md:static md:z-auto z-[20] left-0 w-full md:w-auto pl-9 md:pl-0 transition-all duration-500 ease-in ${
             open ? "top-12 opacity-100" : "top-[-499px]"
           } md:opacity-100 `}
         >

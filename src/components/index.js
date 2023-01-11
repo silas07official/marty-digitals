@@ -1,6 +1,7 @@
 import imageOne from "../assets/hero-banner.webp";
 import imageTwo from "../assets/features-1.webp";
 import imageThree from "../assets/features-2.webp";
+import imageFour from "../assets/about.png";
 
 export const contents = [
   {
@@ -35,7 +36,7 @@ export const serviceCard = [
   {
     title: "Website Development",
     icon: "desktop-outline",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+    text: "we craft beautiful, responsive and effective websites that aid the growth of your business",
   },
   {
     title: "Software Development",
@@ -49,10 +50,19 @@ export const serviceCard = [
   },
   {
     title: "Email Services",
-    icon: "desktop-outline",
+    icon: "mail-unread-outline",
     text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
   },
 ];
+
+export const aboutContent = {
+  header: "About Us",
+  headerSubtext: "What makes us different",
+  subText:
+    "Welcome to Marty Digitals! We are a team of experienced and talented developers, designers, and project managers who are passionate about creating beautiful and functional websites. We specialize in building custom web solutions that are tailored to meet the unique needs of our clients.",
+  image: imageFour,
+  buttonText: "Read More",
+};
 
 export const Links = [
   { name: "home", link: "/" },

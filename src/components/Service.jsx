@@ -6,7 +6,7 @@ function Service() {
   return (
     <section
       id="services"
-      className=" bg-sectionBg px-4 py-16 md:px-14 mt-8 mb-[86px] md:mb-12 md:mt-[140px]"
+      className=" bg-sectionBg px-4 py-16 md:px-14 mt-2 mb-[50px] md:mb-6 md:mt-[140px]"
     >
       <div className="md:flex gap-[150px] items-center md:justify-center md:px-14 px-4">
         <div className="mb-6 md:mb-0 flex flex-col md:items-start justify-center items-center basis-[50%]">

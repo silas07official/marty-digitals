@@ -42,7 +42,7 @@ function Contact() {
             className="shadow-md shadow-indigo-300 px-2 py-8 rounded-md "
             onSubmit={sendEmail}
           >
-            <div className="flex">
+            <div className="md:flex md:flex-row">
               <div className=" mb-[20px] basis-[50%]">
                 <label htmlFor="name" className="text-bigText p-3">
                   Name*
@@ -53,7 +53,7 @@ function Contact() {
                   id="name"
                   required
                   placeholder="Enter Your Name"
-                  className="border p-2 text-sm  outline-none text-gray-400 w-[210px] bg-transparent"
+                  className="border p-2 text-sm  outline-none text-gray-400 my-1 mx-3 md:mx-1  w-[93%] md:w-[195px] bg-transparent"
                 />
               </div>
               <div className="mb-[20px] basis-[50%]">
@@ -66,7 +66,7 @@ function Contact() {
                   id="email"
                   required
                   placeholder="Enter Your Email"
-                  className="border p-2 text-sm  outline-none text-gray-400 w-[210px] bg-transparent"
+                  className="border p-2  text-sm  outline-none text-gray-400 my-1 mx-3 md:mx-1  w-[93%] md:w-[195px] bg-transparent"
                 />
               </div>
             </div>
@@ -78,7 +78,7 @@ function Contact() {
                 name="message"
                 id="message"
                 required
-                className="w-[95%] border outline-none resize-none mx-4 my-3 p-3 h-[250px] bg-transparent"
+                className="w-[93%] md:w-[95%] border outline-none resize-none mx-4 my-3 p-3 h-[180px] md:h-[250px] bg-transparent"
                 placeholder="Enter Your Message"
               ></textarea>
             </div>

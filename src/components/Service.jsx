@@ -8,8 +8,8 @@ function Service() {
       id="services"
       className=" bg-sectionBg px-4 py-16 md:px-14 mt-2 mb-[50px] md:mb-6 md:mt-[140px]"
     >
-      <div className="md:flex gap-[150px] items-center md:justify-center md:px-14 px-4">
-        <div className="mb-6 md:mb-0 flex flex-col md:items-start justify-center items-center basis-[50%]">
+      <div className="md:flex gap-28 items-center md:justify-center md:px-14 px-4">
+        <div className="mb-6 md:mb-0 flex flex-col md:items-start justify-center items-center basis-[60%]">
           <div className="grid place-items-center text-[40px] text-indigo-500 bg-indigo-100 w-[60px] h-[60px] rounded-[4px] mb-[30px] z-10">
             <ion-icon name="cube"></ion-icon>
           </div>

@@ -41,17 +41,17 @@ export const serviceCard = [
   {
     title: "Software Development",
     icon: "desktop-outline",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+    text: "We build custom software applications that meet your unique requirements, leveraging the latest technologies to ensure scalability, security, and performance",
   },
   {
     title: "Website Maintenance",
     icon: "construct-outline",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+    text: "Our website maintenance services ensure that your website is always up-to-date, secure, and optimized for performance.",
   },
   {
     title: "Email Services",
     icon: "mail-unread-outline",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, possimus.",
+    text: "With our email services, you can streamline your communication, enhance productivity, and stay connected with your customers and partners.",
   },
 ];
 

@@ -6,7 +6,7 @@ function About() {
   return (
     <section
       id="about"
-      className="mt-[48px] mb-16 md:mt-[65px] md:mb-16 md:px-4 px-2 py-9 md:py-10"
+      className=" bg-white mt-[48px] mb-16 md:mt-[65px] md:mb-16 md:px-4 px-2 py-9 md:py-10"
     >
       <div className="md:flex gap-6 items-center md:justify-center md:px-14 px-4">
         <div className=" md:mb-0 md:basis-[45%]">

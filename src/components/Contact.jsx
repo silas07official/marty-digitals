@@ -1,10 +1,12 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Button from "./Button";
 import emailjs from "emailjs-com";
 import { Result } from "postcss";
+import Modal from "./Modal";
 
 function Contact() {
   const form = useRef();
+  const [showModal, setShowModal] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,12 +19,16 @@ function Contact() {
         "user_wEgO1uJigsjaEN4LM3GoR"
       )
       .then(
-        (result) => console.log(result.text),
+        (result) => {
+          console.log(result.text)
+          setShowModal(true)
+          e.target.reset();
+        },
         (error) => console.log(error.text)
+        
       );
-    e.target.reset();
   };
-
+ 
   return (
     <section
       id="contact"
@@ -35,68 +41,61 @@ function Contact() {
       <p className="text-bigText text-center my-4 text-[18px]">
         Do you want to start a Project ? Leave us a message
       </p>
-      <div className="md:flex gap-[150px] items-center md:justify-center md:px-14 px-4 md:my-[50px] my-3">
-        <div className="mb-[20px] basis-[50%]">
-          <form
-            ref={form}
-            className="shadow-md shadow-indigo-300 px-2 py-8 rounded-md "
-            onSubmit={sendEmail}
-          >
-            <div className="md:flex md:flex-row">
-              <div className=" mb-[20px] basis-[50%]">
-                <label htmlFor="name" className="text-bigText p-3">
-                  Name*
-                </label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required
-                  placeholder="Enter Your Name"
-                  className="border p-2 text-sm  outline-none text-gray-400 my-1 mx-3 md:mx-1  w-[93%] md:w-[195px] bg-transparent"
-                />
+      <div className="md:flex justify-center items-center gap-7 mt-10">
+        <div className="max-w-md bg-white rounded-lg overflow-hidden md:max-w-xl">
+        <div className="md:flex">
+          <div className="md:w-1/2 bg-indigo-50 p-4">
+            <form ref={form} onSubmit={sendEmail}>
+              <div className="mb-4">
+                <label htmlFor="name" className="block text-bigText font-semibold mb-2">Name</label>
+                <input type="text" id="name" name="name" className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
-              <div className="mb-[20px] basis-[50%]">
-                <label htmlFor="name" className="text-bigText p-3">
-                  Email*
-                </label>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  required
-                  placeholder="Enter Your Email"
-                  className="border p-2  text-sm  outline-none text-gray-400 my-1 mx-3 md:mx-1  w-[93%] md:w-[195px] bg-transparent"
-                />
+              <div className="mb-4">
+                <label htmlFor="email" className="block text-bigText font-semibold mb-2">Email</label>
+                <input type="email" id="email" name="email" className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
               </div>
-            </div>
-            <div>
-              <label for="message" className="my-3 mx-4">
-                Message*
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                required
-                className="w-[93%] md:w-[95%] border outline-none resize-none mx-4 my-3 p-3 h-[180px] md:h-[250px] bg-transparent"
-                placeholder="Enter Your Message"
-              ></textarea>
-            </div>
-            <Button
-              type="submit"
-              className="mx-4 bg-indigo-500  text-white hover:text-indigo-500 hover:bg-sectionBg hover:border hover:border-indigo-500 duration-400 ease-in my-4"
-            >
-              <span>Send Message</span>
-              <ion-icon name="paper-plane-outline"></ion-icon>
-            </Button>
-          </form>
+              <div className="mb-4">
+                <label htmlFor="message" className="block text-bigText font-semibold mb-2">Message</label>
+                <textarea id="message" name="message" className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+              </div>
+              <div className="text-center">
+                 <Button
+                type="submit"
+                className="mx-4 bg-indigo-500  text-white hover:text-indigo-500 hover:bg-sectionBg hover:border hover:border-indigo-500 duration-400 ease-in my-4"
+              >
+                <span>Send Message</span>
+                <ion-icon name="paper-plane-outline"></ion-icon>
+              </Button>
+              </div>
+            </form>
+          </div>
+          <div className="md:w-1/2 bg-indigo-100 p-4">
+            <h2 className="text-md text-bigText md:text-lg font-semibold mb-4">Contact Information</h2>
+            <ul className=" pl-4 list-none">
+              <li className="mb-2"><ion-icon name="locate-outline" className="inline-block mr-2"></ion-icon>Lagos, Nigeria</li>
+              <li className="mb-2"><ion-icon name="call-outline" className="inline-block mr-2" ></ion-icon>+234 9066-777-091</li>
+              <li><ion-icon name="mail-outline" className="inline-block mr-2"></ion-icon>martydigitals@gmail.com</li>
+              <li><ion-icon name="logo-facebook" className="inline-block mr-2"></ion-icon>Marty Digitals</li>
+              <li><ion-icon name="logo-twitter" className="inline-block mr-2"></ion-icon>Marty Digitals</li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <p>heey</p>
-        </div>
+            </div>
+            <div className="mt-5 hidden md:block md:mt-0">
+              <img src="https://www.sendnotice.in/assets/images/contactus.svg" alt="contactus_image" className="w-[100%]" />
+            </div>
       </div>
+      {showModal?<Modal message="Message sent successfully" />:null}
     </section>
   );
 }
 
 export default Contact;
+
+
+
+
+
+
+
+

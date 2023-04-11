@@ -105,40 +105,44 @@ function Contact() {
                 Contact Information
               </h2>
               <ul className=" pl-2 list-none">
-                <li className="flex items-center gap-1  my-4 text-sm">
+                <li className="flex items-center gap-1  my-4 text-[16px] md:text-sm">
                   <ion-icon
                     name="locate-outline"
                     className="inline-block mr-2"
                   ></ion-icon>
                   Lagos, Nigeria
                 </li>
-                <li className="flex items-center gap-1  my-4 text-sm">
+                <li className="flex items-center gap-1  my-4 text-[16px] md:text-sm">
                   <ion-icon
-                    name="call-outline"
+                    name="logo-whatsapp"
                     className="inline-block mr-2"
                   ></ion-icon>
-                  +234 9066-777-091
+                  <a href="https://wa.me/2349066777091" target="blank">+234 9066-777-091</a>
                 </li>
-                <li className="flex items-center gap-1 text-sm my-4">
+                <li className="flex items-center gap-1 text-[16px] md:text-sm my-4">
                   <ion-icon
                     name="mail-outline"
                     className="inline-block"
                   ></ion-icon>
-                  martydigitals@gmail.com
+                  <a href="mailto:martydigitals@gmail.com" target="blank">
+                    martydigitals@gmail.com
+                  </a>
                 </li>
-                <li className="flex items-center my-4  gap-1 text-sm">
+                <li className="flex items-center my-4  gap-1 text-[16px] md:text-sm">
                   <ion-icon
                     name="logo-facebook"
                     className="inline-block mr-2"
                   ></ion-icon>
-                  Marty Digitals
+                  <a href="https://web.facebook.com/MartyDigitals" target="blank">Marty Digitals</a>
+                  
                 </li>
-                <li className="flex items-center my-4 gap-1 text-sm">
+                <li className="flex items-center my-4 gap-1 text-[16px] md:text-sm">
                   <ion-icon
                     name="logo-twitter"
                     className="inline-block mr-2"
                   ></ion-icon>
-                  Marty Digitals
+                  <a href="https://twitter.com/marty_digitals" target="blank">Marty Digitals</a>
+                  
                 </li>
               </ul>
             </div>

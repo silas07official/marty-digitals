@@ -29,7 +29,7 @@ function Service() {
           <li key={card.title} className="shadow-md shadow-indigo-300 hover:bg-indigo-500 hover:text-white rounded-md duration-500 ease-in ">
           <div className="flex flex-col justify-center items-center p-[20px]  hover:cursor-pointer  text-bigText hover:text-white">
             <div className="h-[60px] w-[60px] grid place-items-center text-[30px] text-indigo-500 bg-indigo-100 rounded-full my-3">
-              <ion-icon name={card.icon}></ion-icon>
+              <ion-icon name={card.icon} className="z-10]"></ion-icon>
             </div>
             <h3 className="my-[10px] text-xl font-medium">
               {card.title}

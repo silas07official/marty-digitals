@@ -52,7 +52,13 @@ function Contact() {
                   >
                     Name
                   </label>
-                  <input type="text" id="name" name="name" required />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  />
                 </div>
                 <div className="mb-4">
                   <label
@@ -61,7 +67,13 @@ function Contact() {
                   >
                     Email
                   </label>
-                  <input type="email" id="email" name="email" required />
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  />
                 </div>
                 <div className="mb-4">
                   <label
@@ -70,7 +82,12 @@ function Contact() {
                   >
                     Message
                   </label>
-                  <textarea id="message" name="message" required></textarea>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  ></textarea>
                 </div>
                 <div className="text-center">
                   <Button
@@ -100,9 +117,7 @@ function Contact() {
                     name="logo-whatsapp"
                     className="inline-block mr-2"
                   ></ion-icon>
-                  <a href="https://wa.me/2349066777091" target="blank">
-                    +234 9066-777-091
-                  </a>
+                  <a href="https://wa.me/2349066777091" target="blank">+234 9066-777-091</a>
                 </li>
                 <li className="flex items-center gap-1 text-[16px] md:text-sm my-4">
                   <ion-icon
@@ -118,21 +133,16 @@ function Contact() {
                     name="logo-facebook"
                     className="inline-block mr-2"
                   ></ion-icon>
-                  <a
-                    href="https://web.facebook.com/MartyDigitals"
-                    target="blank"
-                  >
-                    Marty Digitals
-                  </a>
+                  <a href="https://web.facebook.com/MartyDigitals" target="blank">Marty Digitals</a>
+                  
                 </li>
                 <li className="flex items-center my-4 gap-1 text-[16px] md:text-sm">
                   <ion-icon
                     name="logo-twitter"
                     className="inline-block mr-2"
                   ></ion-icon>
-                  <a href="https://twitter.com/marty_digitals" target="blank">
-                    Marty Digitals
-                  </a>
+                  <a href="https://twitter.com/marty_digitals" target="blank">Marty Digitals</a>
+                  
                 </li>
               </ul>
             </div>

@@ -22,10 +22,12 @@ function Contact() {
         (result) => {
           console.log(result.text);
           setShowModal(true);
-          e.target.reset();
+         
         },
         (error) => console.log(error.text)
       );
+
+      e.target.reset();
   };
 
   return (

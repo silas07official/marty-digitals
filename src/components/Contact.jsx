@@ -22,10 +22,11 @@ function Contact() {
         (result) => {
           console.log(result.text);
           setShowModal(true);
-          e.target.reset();
+          
         },
         (error) => console.log(error.text)
       );
+      e.target.reset();
   };
 
   return (
@@ -57,7 +58,7 @@ function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none"
+                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   />
                 </div>
                 <div className="mb-4">
@@ -72,7 +73,7 @@ function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none"
+                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   />
                 </div>
                 <div className="mb-4">
@@ -86,7 +87,7 @@ function Contact() {
                     id="message"
                     name="message"
                     required
-                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 focus:outline-none"
+                    className="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   ></textarea>
                 </div>
                 <div className="text-center">

@@ -4,7 +4,7 @@ function Fetch() {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-      fetch('http://api.tpossystems.com/users')
+      fetch('https://api.tpossystems.com/users')
         .then(response => response.json())
         .then(data => setUsers(data))
         .catch(error => console.error(error));

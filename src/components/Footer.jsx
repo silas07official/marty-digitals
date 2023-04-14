@@ -97,7 +97,7 @@ function Footer() {
           </div>
           <div>
             <h3 className=" mb-2 uppercase underline underline-offset-1 font-medium">
-              Newsletter
+              subscribe to Newsletter
             </h3>
             <form action="#" className="flex items-center gap-2 md:flex-col">
               <div>
@@ -113,7 +113,7 @@ function Footer() {
                 type="submit"
                 className=" bg-sectionBg border border-indigo-500 text-indigo-500 hover:text-white hover:bg-indigo-500 duration-500 ease-in my-1"
               >
-                Subscribe
+                Join
               </Button>
             </form>
           </div>
